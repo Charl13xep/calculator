@@ -1,15 +1,15 @@
-import java.util.Scanner
+import java.util.*
 fun main(args: Array<String>) {
     val reader = Scanner(System.`in`)
     print("Enter a number; ")
-    var no1:Int = reader.nextInt()
+    val no1:Double = reader.nextDouble()
     println("Choose operator;\n--------------------------------------------------------------------------")
     println(" \n + = addition \n - = subtraction \n / = division \n * = multiplication\n")
     println("--------------------------------------------------------------------------")
     print("= ")
     val operator1 = readln()
     print("Enter a second number; ")
-    val no2:Int = reader.nextInt()
+    val no2:Double = reader.nextDouble()
     if (operator1 == "+" ){
         val ans = no1 + no2
 
@@ -24,8 +24,8 @@ fun main(args: Array<String>) {
         println(" $no1 * $no2 = $ans")
     }else if (operator1 == "/" ) {
         val ans = no1 / no2
-        val nkt = ans.toDouble()
 
-        println(" $no1 / $no2 = $nkt")
+
+        println(" $no1 / $no2 = $ans")
     }
 }
